@@ -1,0 +1,12 @@
+zrssfeed (1.0.1-ar0); urgency=low
+
+ * added option to conditionally show/hide time separately from date
+ 
+ -- andrea rota <a@xelera.eu>  Wed, 25 Aug 2010 17:56:14 +0100
+
+zrssfeed (1.0.1); urgency=low
+
+ * Corrected issue with multiple instances
+
+ -- Zazar Ltd
+

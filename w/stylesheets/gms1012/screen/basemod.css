@@ -1,0 +1,303 @@
+/**
+ * "Yet Another Multicolumn Layout" - (X)HTML/CSS framework
+ * (en) stylesheet for screen layout
+ * (de) Stylesheet für das Bildschirm-Layout
+ *
+ * @creator       YAML Builder V1.2.1 (http://builder.yaml.de)
+ * @file          basemod.css
+ * @-yaml-minver  3.3
+ */
+
+@media screen, projection
+{
+  /** 
+   * (en) Forcing vertical scrollbars in IE8, Firefox, Webkit & Opera 
+   * (de) Erzwingen vertikaler Scrollbalken in IE8, Firefox, Webkit & Opera 
+   *
+   * @workaround
+   * @affected IE8, FF, Webkit, Opera
+   * @css-for all
+   * @valid CSS3
+   */
+
+  body { overflow-y: scroll; }
+
+  /*-------------------------------------------------------------------------*/
+
+  /* (en) Marginal areas & page background */
+  /* (de) Randbereiche & Seitenhintergrund */
+  body {
+   background: #dadfe2 url("images/bg_blue.gif") repeat-x top left fixed;
+   padding: 10px 0;
+   font-size: 9pt;
+   font-family: Ubuntu, Helvetica, sans-serif;
+  }
+
+  /* Layout Alignment | Layout-Ausrichtung */
+  .page_margins { margin: 0 auto; }
+
+  /* Layout Properties | Layout-Eigenschaften */
+  .page_margins { width: auto;  min-width: 960px; max-width: 960px; background: #fff; }
+  .page { padding-top: 10px; padding-bottom: 10px; }
+  #header {
+   /* padding: 45px 2em 1em 20px; */
+   color: #000;
+   background: #fff;
+  }
+  #nav { overflow:hidden; }
+  
+  #main { margin: 10px 0; background: #fff; }
+  #footer { padding: 10px 20px; color:#666; background: #f9f9f9; border-top: 5px #efefef solid; }
+
+  /* (en) navigation: horizontal adjustment | (de) horizontale Ausrichtung  */
+  #nav ul { margin-left: 20px; }
+
+  /*-------------------------------------------------------------------------*/
+
+  /**
+   * (en) Formatting content container
+   * (de) Formatierung der Inhalts-Container
+   *
+   */
+
+  #col1 { float: left; width: 75%}
+  #col2 { display:none}
+  #col3 { width: auto; margin: 0 0 0 75%}
+  #col1_content { padding: 0 10px 0 20px }
+  #col3_content { padding: 0 20px 0 10px }
+	
+  /*-------------------------------------------------------------------------*/
+
+  /* logo pr0n */
+  #logoarea { display: table; height: 137px; overflow: hidden; }
+  #logoarea > div { display: table-cell; vertical-align: bottom; }
+  
+  /* nav */
+  .hlist { background-color: #465762; background-image: none; border-bottom: none; border-top: none; }
+  .hlist ul li.active { 
+   background-color: #dadfe2;
+   border-left: 1px solid #ffffff;
+   border-right: 1px solid #ffffff;
+   background-image: none;
+  }
+  .hlist ul li.active strong, .hlist ul li.active a:focus, .hlist ul li.active a:hover, .hlist ul li.active a:active {
+   color: #000000;
+  }
+  .hlist ul li a, .hlist ul li strong {
+   color: #ffffff;
+  }
+
+  .hlist ul li strong {
+   padding: 0;
+  }
+ 
+  .hlist ul li.active a {
+   color: #000000;
+  }
+  
+  /* footer */
+  
+  #footer .credits {
+   font-size: 0.8em;
+  }
+  
+  /* element styles */
+    
+  h1, h2, h3, h4, h5, h6 {
+   color: #b1bc0e;
+  }
+  
+  h1, h2 {
+   font-size: 1.2em;
+   margin-bottom: 0.3em;
+   font-weight: bold;
+  }
+  
+  #col3 h1, #col3 h2 {
+   font-size: 1.2em;
+  }
+  
+  h1 {
+   text-transform: uppercase;
+   margin-bottom: 1.2em;
+  }
+  
+  h2 {
+   font-size: 1.2em;
+  }
+  
+  ul, ol, dl {
+   margin: 0;
+  }
+
+  ul {
+   list-style-type: none;
+  }
+  
+  li {
+   margin-left: 0;
+   margin-bottom: 0.5em;
+  }
+  
+  a {
+   color:#465762;
+   text-decoration:none;
+  }
+  
+  a.external {
+   background: url("/media/external-link-ltr-icon.png") no-repeat scroll right center transparent;
+   padding: 0 13px 0 0;
+  }
+  
+  p {
+   line-height: 1.25em;
+   margin-bottom: 1.25em;
+   padding-left: 0;
+   padding-right: 0;
+  }
+  
+  div.defaultBox {
+   margin-bottom: 2em;
+  }
+  .opaqueForty {
+   opacity: 0.4;
+   filter:alpha(opacity=40);
+  }
+
+ .alignright {
+  float: right;
+ }
+ 
+ .fullwidth {
+  max-width:100%;
+ }
+ 
+ .spaceAfter {
+  margin-bottom: 1.8em;
+ }
+ 
+ /* *** feature boxes *** */
+ 
+  .gms1012 .frontStory {
+  margin-bottom: 1.5em;
+ }
+ 
+ .gms1012 .frontStory .story {
+  background: no-repeat right top;
+  position: relative;
+  height: 190px;
+ }
+ 
+ .gms1012 .frontStory .captionBox {
+  color: rgb(255, 255, 255);
+  max-width: 100%;
+  background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.6);
+  filter:progid:DXImageTransform.Microsoft.AlphaImageLoader (src='/w/stylesheets/gms1012/media/50p_black.png',sizingMethod='scale');
+  vertical-align: text-bottom;
+  height: 50px;
+  position: absolute;
+  top: 100%;
+  margin-top: -70px;
+  padding: 10px;
+  -moz-border-radius-topright: 1em;
+  -webkit-border-top-right-radius: 1em;
+  border-top-right-radius: 1em;
+ }
+ 
+ .gms1012 .frontStory .captionBox.short {
+  height: 25px;
+  margin-top: -45px;
+ }
+ 
+ .gms1012 .frontStory .themeBox {
+  color: rgb(255, 255, 255);
+  max-width: 100%;
+  background: none repeat scroll 0% 0% rgba(180,0,29, 0.8);
+  filter:progid:DXImageTransform.Microsoft.AlphaImageLoader (src='/w/stylesheets/gms1012/media/50p_red.png',sizingMethod='scale');
+  vertical-align: text-bottom;
+  text-align: right;
+ }
+
+ .gms1012 .frontStory .captionBox h1{
+  font-size: 12pt;
+  padding-left: 0 !important;
+ }
+
+ .gms1012 .frontStory .themeBox h2{
+  font-size: 8pt;
+  text-align: right;
+  padding-right: 0.3em;
+ }
+ 
+ .frontStory .subcl > a, .frontStory .subcr > a {
+  color: inherit !important;
+ }
+ 
+ .frontStory h1 {
+  color: rgba(255, 255, 255, 1);
+ }
+ 
+ #storyProgramme {
+   background-image: url('/media/1012Agenda.gif');
+   height: 190px;
+   width: 100%;
+   background-color: #d3dcdf;
+ }
+
+ #storyPublications {
+   background-image: url('/media/1012GMMCaseStudies.gif');
+   height: 190px;
+   width: 100%;
+   background-color: #d3dcdf;
+ }
+
+ #storyGMM {
+   background-image: url('/media/1012GMM.gif');
+   height: 190px;
+   width: 100%;
+   background-color: #d3dcdf;
+ }
+ #storyVideo {
+   background-image: url('/media/1012PublicLectures.jpg');
+   height: 190px;
+   width: 100%;
+   background-color: #d3dcdf;
+ }
+ 
+ /* metro area profiles page */
+ table.metroProfiles {
+  width: 100%;
+ }
+ 
+ table.metroProfiles tr {
+  line-height: 1.8em;
+ }
+ 
+ table.metroProfiles tr td {
+  width: 19%;
+ }
+ 
+ table.areaRankings, table.areaRankings td {
+  border-color: #000000;
+  border-style: solid;
+  width: 100%;
+ }
+ 
+ table.areaRankings {
+  border-width: 0 0 1px 1px;
+  border-spacing: 0;
+  border-collapse: collapse;
+ }
+ 
+ table.areaRankings td {
+  margin: 0;
+  padding: 4px;
+  border-width: 1px 1px 0 0;
+  width: 24%
+ }
+
+ table.areaRankings thead {
+  font-weight: bold;
+ }
+ 
+}
