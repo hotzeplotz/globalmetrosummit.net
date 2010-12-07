@@ -68,9 +68,27 @@
 	
   /*-------------------------------------------------------------------------*/
 
-  /* logo pr0n */
-  #logoarea { display: table; height: 137px; overflow: hidden; }
-  #logoarea > div { display: table-cell; vertical-align: bottom; }
+  /* header logos hack to fulfill Brookings's grand feelings of self-importance */
+  #logoarea {
+   position: fixed;
+   top: 0; 
+   width: 960px; 
+   z-index: 999;
+  }
+  
+  #logoarea #logocontainer {
+   -moz-border-radius-bottomleft: 7px;
+   -moz-border-radius-bottomright: 7px;
+   -webkit-border-bottom-left-radius: 1em;
+   -webkit-border-bottom-right-radius: 1em;
+   border-bottom-left-radius: 1em;
+   border-bottom-right-radius: 1em;
+   max-width: 100%;
+   background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.6);
+  filter:progid:DXImageTransform.Microsoft.AlphaImageLoader (src='/w/stylesheets/gms1012/media/50p_black.png',sizingMethod='scale');
+   padding-bottom: 5px;
+   padding-top: 5px;
+  }
   
   /* nav */
   .hlist { background-color: #465762; background-image: none; border-bottom: none; border-top: none; }
