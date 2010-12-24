@@ -1,5 +1,5 @@
 task :preview do
- sh 'rync -ravz --delete --exclude .git . lcwp:preview.globalmetrosummit.net/'
+ sh 'rsync -ravz --delete --exclude .git . lcwp:preview.globalmetrosummit.net/'
 end
 
 task :push_live do
